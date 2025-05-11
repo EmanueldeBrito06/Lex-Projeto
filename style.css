@@ -20,6 +20,7 @@ html, body{
     --brand-light: rgb(255, 255, 255);
     --footer-bg-color: rgb(0, 32, 34);
     --button-color: rgb(4, 177, 168);
+    --body--color: #f3f3f7;
 
 }
 header{
@@ -226,11 +227,7 @@ button.depois-menu {
     padding: 10px 10px; /*serve para priencher automaticamente os espaço laterais */
     margin-top: 1.1rem;
 }
-.img-hero img{
-  max-width: 70%; 
-  max-height: 74%;
-  margin-left: 60px; 
-}
+
 /*===================Home-====================*/
 #home-pai{
     width: 100%;
@@ -238,20 +235,22 @@ button.depois-menu {
 }
 
 .botão{
-    max-width: 80%;
+    max-width: 100%;
     display: flex;
-    justify-content: flex-end;
-    gap: 70px;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     padding: 30px;
     margin-top: 30px;
 }
+
 .botão button{
-    padding: 15px 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     border: none;
     background-color: rgb(255, 246, 253);
 }
+
 .botão .bt{
     display: flex;
     justify-content: center;
@@ -259,12 +258,14 @@ button.depois-menu {
     background-color: #d42db0;
     color: #fff;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     box-shadow: 2px 1px 7px rgba(49, 0, 30, 0.664);
 }
 .botão .bt i{
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+    padding-right: 10px;
+
 }
 
 #home-filho{
@@ -276,8 +277,6 @@ button.depois-menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 26px;
-    padding-top: 10px;
     padding-bottom: 60px;
 }
 #filho-hom button{
@@ -285,13 +284,12 @@ button.depois-menu {
     padding: 10px 20px;
     font-size: 1.1rem;
     position: relative;
-    top: -35px;
+    top: -20px;
+    box-shadow: 0px 1px 5px rgba(196, 196, 196, 0.514);
+    margin-bottom: 20px;
     
 }
-div #f-hom{
-     display: flex;
-     align-items: center;
-}
+
 #filho-hom h3{
     font-family: "Poppins";
     font-size: 1.7rem;
@@ -316,9 +314,7 @@ div #f-hom span{
     grid-template-rows: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta colunas automaticamente */
     gap: 20px; 
     margin: auto;
-    max-width: calc(100% - 30px);
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 .home{
     height: 360px;
@@ -335,28 +331,28 @@ div #f-hom span{
 }
 .hom{
     background-color: white;
-    padding: 20px;
+    padding:  15px;
     display: flex;
     flex-direction: column;
     box-shadow: 3px 2px 4px rgba(104, 104, 104, 0.575);
-    gap: 2px;
+    gap: 1px;
     position: relative;
 }
 .ho{
     display: flex;
     justify-content: space-between;
-    gap: 2px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .ho span h5{
     font-family: "Poppins";
-    font-size: 1.3rem;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .ho span p{
     font-family: "Poppins";
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgba(77, 77, 77, 0.747);
 }
 .ho i{
@@ -365,11 +361,11 @@ div #f-hom span{
 div .h{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 div .h h6{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: "Poppins";
     color: black;
 }
@@ -379,7 +375,8 @@ div .h button{
     border: 1px solid rgba(121, 120, 120, 0.432);
     color: rgba(121, 120, 120, 0.801);
     margin-left: 9px;
-    padding: 5px;
+    padding: 3px;
+    border: none;
 }
 .hom h4{
     color: rgb(158, 3, 81);
@@ -417,31 +414,6 @@ div .h button{
  color: #fff;
  background-color: #d42db0;
 }
-/*=================== TAILER-====================*/
-#trailer{
- width: 100%;
-    height: 80vh;
-    margin: auto;
-    background-image: url(img/img2/canvas_wall_art_banner3.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    overflow: hidden;
-}
-
-.secti-trailer{
-   
-
-  
-}
-.secti-trailer h3{
-    font-size: 3.2rem;
-    
-
-}
 
 /*==================<div class="colhel-text">=====================*/
 
@@ -449,7 +421,7 @@ div .h button{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: #c634a610;
+    background-color: var(--body--color);
     padding: 10px; 
 }
 .colhel-text h3{
@@ -465,112 +437,46 @@ div .h button{
 .colhel-text a:hover{
     color: #d42db0;
 }
-/*===================3 treiscera Section====================*/
-#hero-1{
-    width: 100%;
-    background-color: var(--fundo-fd-color-2);
-    padding: 20px;   
-}
-.con{
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5rem;
-}
 
-.con h1{
-    font-size: 1.9rem;
-    font-family: "DM Sans";
-    line-height: 1;
-    margin-bottom: 2.4rem; 
-}
-.con img{
-    width: 20%;
-}
-.bene-1{
-  min-width: 60%;
-  min-height: 35%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.bene{
-    max-width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--brand-light);
-    margin: auto;
-    box-shadow: 2px 2px 7px  rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-.bene-item{
-    max-width: 99%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--header-bg-color);
-}
-.bene-item h2{
-    font-family: "DM Sans";
-    font-size: 1.3rem; /*altura do taxro*/
-    font-weight: 700;
-    text-transform: uppercase; /*caixa alta*/
-}
-#bi{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 10px;
-}
-#bi .bi{
-    font-size: 1.3rem;
-    align-items: flex-end;
-    color: #e67dcf;
-}
-.bene-item .bi{
-    color: var(--header-bg-color);
-    font-size: 2.4rem;
-}
-.bene p{
-    font-family: "Poppins";
-    font-size: 0.9rem;
-    padding: 20px;    
-}
 /*===================4 quarta-Section====================*/
 #emana{
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+
     gap: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 /*img-eng*/
 .img-eng{
     display: flex;
-    justify-content: center;
-   margin: auto;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 0 30px;
 }
 .img-eng img{
-    max-width: 80%;
+    max-width: 100%;
+    max-height: 90%;
     border: none;
     border-radius: 0 40px;
 }
 /*=======section- filho========*/
+#contai-eman1{
+    max-width: 50%;
+    padding: 0 20px;
+   
+}
 .eman1-1{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: flex-start;
-    padding: 20px;
+    gap: 10px;
+    
 }
 /*====<div class="eman1-1">=====*/
 .eman1-1 h1{
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-family: "DM Sans";
     margin-top: 20px;
 }
@@ -578,7 +484,6 @@ div .h button{
 .eman1-1 p{
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
-    line-height: 2.0;
     color: black;
     font-weight: 400;
     margin-bottom: 20px;
@@ -586,17 +491,16 @@ div .h button{
 /*====== <div class="eman2-2">=====*/
 .eman2-2{
     display: flex;
-    gap: 70px;
-    padding: 20px;
+    gap: 40px;
     margin-bottom: 20px;
 }
 .ema2 h1{
-    font-size: 2.9rem;
+    font-size: 2.1rem;
     font-family: "DM Sans";    
 }
 .ema2 p{
     font-family: "Poppins";
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     color: black;
 }
 /*=========<div class="btn-eman2-2">=======*/
@@ -621,33 +525,71 @@ div .h button{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
    
 }
 #sectio{
     display: flex;
     flex-direction: column;
-    padding: 20px;
     justify-content: flex-start;
-    margin-top: 40px;
+   
+    gap: 20px;
+    padding: 0 30px;
     
 }
 #sectio h1{
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-family: "DM Sans";
-    margin-bottom: 40px;
+   
 }
 .emanel-2 p{
     font-family: "Poppins", sans-serif;
-    font-size: 1.0rem;
+    font-size: 1.1em;
     color: black;
     font-weight: 400;
 }
+
+
 .se5-img img{
     max-width: 100%;
-    max-height: 80%;
-    margin-top: 40px;
+    max-height: 90%;
+    
+    border: none;
+    border-radius: 30px;
 }
+/*=================== TAILER-====================*/
+#trailer{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.secti-trailer{
+    width: 100%;
+    height: 29vw;
+    background-image: url(img/img2/canvas_wall_art_banner3.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+   gap: 21px;
+   padding: 50px;
+  
+}
+.secti-trailer h5{
+    color: #580338;
+    font-size: 3vw;
+    font-family: "DM Sans";
+}
+.secti-trailer p{
+   font-family: "Poppins";
+   font-size: 1.1vw;
+}
+
+
+
+
 /*===================6 Quinta-Section====================*/
 #section-6{
     width: 100%;
@@ -662,6 +604,7 @@ div .h button{
     gap: 40px;
     padding-right: 20px;
     margin-bottom: 40px;
+    
 }
 .secti h1{
     font-size: 1.9rem;
@@ -678,7 +621,7 @@ div .h button{
 }
 
 .bi{
-    color: rgb(2, 48, 33);
+     color: rgb(150, 7, 66);
     font-size: 2rem;
     cursor: pointer;
 }
@@ -721,22 +664,19 @@ div .h button{
 #section-7{
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: 2px;
     justify-content: center;
     align-items: center;
-    margin-top: 6.0rem;
+    margin-top: 50px;
    
     
 }
 #section-7 h1{
     font-size: 1.8rem;
     font-family: "DM Sans";
-    line-height: 130%;
     align-items: center;
     justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem; /*serve para priencher automaticamente os espaço laterais */
-     text-align: center;
+    text-align: center;
 }
 #section-7 p{
     font-family: "Poppins", sans-serif;
@@ -747,7 +687,82 @@ div .h button{
     margin-left: 2rem;
     margin-right: 2rem; /*serve para priencher automaticamente os espaço laterais */
     text-align: center;
-    margin-bottom: 6.0rem;
+    margin-bottom: 20px;
+}
+
+
+/*===================   HERO-1  Benefícios casa de luxo ===================*/
+#hero-1{
+    width: 100%;
+    background-color: var(--fundo-fd-color-2);
+    padding: 20px;   
+}
+.con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.con h1{
+    font-size: 1.9rem;
+    font-family: "DM Sans";
+    line-height: 1;
+    margin-bottom: 2.4rem; 
+}
+.con img{
+    width: 20%;
+}
+.bene-1{
+  min-width: 60%;
+  min-height: 35%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.bene{
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--brand-light); 
+    box-shadow: 2px 2px 7px  rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.bene-item{
+    max-width: 99%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--header-bg-color);
+}
+.bene-item h2{
+    font-family: "DM Sans";
+    font-size: 1.3rem; /*altura do taxro*/
+    font-weight: 700;
+    text-transform: uppercase; /*caixa alta*/
+}
+#bi{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+#bi .bi{
+    font-size: 1.3rem;
+    align-items: flex-end;
+    color: #e67dcf;
+}
+.bene-item .bi{
+    color: var(--header-bg-color);
+    font-size: 2.4rem;
+}
+.bene p{
+    font-family: "Poppins";
+    font-size: 0.9rem;
+    padding: 20px;    
 }
 
 /*=================== FOOTER ====================*/
@@ -829,29 +844,534 @@ footer{
     margin-right: 3rem;
     cursor: pointer;
 }
+@media (max-width: 999px) {
+    .colhel-text{
+    display: none;
+ }
 
-@media (max-width: 760px) {
+
+.homo-section{
+    min-width: 100%;
+    margin: auto; /* Centraliza */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+      
+}
+
+.home{
+    height: 280px;
+    display: flex;
+    justify-content: center;
+     box-sizing: border-box; 
+}
+.hom{
+    padding: 0 10px;
+}
+.hom p{
+    font-size: 1.4vw;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.home-img{
+    max-width: 35%;
+    height: 280px;
+    border: none;
+    border-radius: 0 20px 0 20px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+ section #sectio{
+    padding: 0 10px;
+ }
+
+}
+/* ========== Mobile 480px ==============*/
+@media (max-width: 480px) {
+    
+/*============Homem=========*/
+
+.wapper{
+    width: 100%;
+    height: 80vh; 
+}
+#hero{ 
+    padding: 20px;
+    gap: 10px;
+}
+.text{
+    gap: 20px;  
+}
+.text h1{
+    top: 35px;
+    left: 15px;
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+.text p{
+    top: 20px;
+    left: 15px;
+    font-size: 1.1rem;
+    
+}
+#input{
+    top: 3px;
+    left: px;
+}
+.btn-pesquisa{
+    padding: 5px 3px;
+}
+.btn-começar{ /* botão- O que ajudar*/
+   
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 7px 1px; /*serve para priencher automaticamente os espaço laterais */
+}
+ /*========segunda-section (home-pai)=============== */  
+section .botão{
+    max-width: 100%;
+    
+}
+.botão .bt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+}
+
+div .bt i{
+    padding: 5px 10px;
+}
+.botão .bt i{
+    font-size: 25px;
+    color: #fff;
+    padding-right: 1px;
+
+}
+.botão button{
+    display: none;
+}
+.botã button{
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(243, 238, 242);
+    margin-bottom: 20px;
+}
+#filho-hom button{
+    display: none;
+}
+  .home-img{
+    display: none;
+  }    
+
+.hom{ 
+    box-shadow: 2px 1px 3px 3px rgba(75, 73, 73, 0.103);
+}
+.ho{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.ho span h5{
+    font-family: "Poppins";
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+.ho span p{
+    font-size: 0.9rem;
+}
+
+div .h{
+    margin-bottom: 1px;
+}
+
+div .h h6{
+    font-size: 0.8rem;
+}
+
+div .h button{
+    padding: 2px 5px;
+}
+.hom h4{
+    font-size: 0.9rem;
+}
+.hom h5{
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+.home .hom p{
+    font-size: 0.9rem;
+}
+.bt-contact {
+    padding-top: 5px;
+}
+.bt-contact button{
+ padding: 5px 10px;
+ font-size: 0.8rem;
+}
+/*=======SECTOM-emana============*/
+
+/*img-eng*/
+
+#emana .img-eng img{
+    max-width: 100%;
+    max-height: 90%;
+    border: none;
+    border-radius: 0 10px;
+}
+/*=======section- filho========*/
+#contai-eman1{
+    max-width: 50%;
+    padding: 0 20px;
+   
+}
+/*====<div class="eman1-1">=====*/
+#emana .eman1-1 h1{
+    font-size: 1.7rem;
+}
+#emana .eman1-1 p{
+    font-size: 1.1rem;
+}
+/*====== <div class="eman2-2">=====*/
+.eman2-2{
+    gap: 45px;
+}
+.ema2 h1{
+    font-size: 2.0rem; 
+}
+.ema2 p{
+    font-size: 1rem;
+}
+ /*=======section 5============*/
+#section-5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+#section-5 #sectio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    
+}
+section #sectio h1{
+    font-size: 1.7rem;   
+}
+#sectio .emanel-2 p{
+    font-size: 1.1rem;
+}
+section .se5-img img{
+    max-width: 90%;
+    max-height: 30%;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+/*=========trailer==*/
+#trailer{
+ display: none;
+}
+/*===================6 Quinta-Section====================*/
+#section-6{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+section #secti-2{
+    display: flex;
+    flex-direction: column;
+ }
+.secti{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    
+}
+.secti h1{
+    font-size: 1.5rem;
+    font-family: "DM Sans";
+}
+section #secti-2{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.bi{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.sect{
+    width: 100%; 
+    height: 37vh;
+  
+}
+/*============= <section id="section-6"> ======================*/
+.sect-3{
+    display: flex;
+    gap: 10px;
+}
+
+#secti-2 h1{
+    font-size: 1.4rem;
+}
+#secti-2 h5{
+    font-size: 1.4rem;
+}
+
+#secti-2 p{
+    font-size: 0.9rem;
+}
+#section-7 h1{
+    font-size: 1.2rem;
+}
+#section-7 p{
+    font-size: 0.9rem;
+}
+/*============= <section id="hero-1"> ======================*/
+ .con h1{
+    font-size: 1.9rem;
+   
+    margin-bottom: 2.4rem; 
+}
+.con img{
+    width: 15%;
+}
+.bene-1{
+  min-width: 100%;
+  min-height: 35%;
+}
+.bene{
+    max-width: 100%;
+    height: 310px;
+}
+.bene-item{
+    max-width: 100%;
+    padding: 0 20px;
+    padding-top: 10px;
+}
+.bene-item h2{
+    font-size: 1.2rem; /*altura do taxro*/
+}
+#bi{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.bene p{
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    padding: 20px;    
+}
+/*=========FOOTER=====================*/
+ 
+.footer h3{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.footer ul li a{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+}
+footer .footer-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-1 p{
+    font-size: 0.6rem;
+}
+
+#logo{
+    max-width: 100%;
+    cursor: pointer;
+}
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.footer-2 h3{
+    font-family: "DM Sans";
+    font-size: 1.3rem;  
+}
+.footer-2 p{
+    font-size: 0.8rem;
+}
+.footer-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 760px){
     /*===== Geral =====*/
   .menu-nav{
     display: none;
-  }
 
+  }
   #open-menu{
     display: flex;
   }
 
+  .botão{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.botão .bt{
+    padding: 7px 14px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+ /*===== Geral =====*/
+
+
+.homo-section{
+    min-width: 100%;
+    margin: auto; /* Centraliza */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+      
+}
+
+.home{
+    height: 280px;
+    display: flex;
+    justify-content: center;
+     box-sizing: border-box; 
+}
+.hom{
+    padding: 0 10px;
+}
+.hom p{
+    font-size: 1.7vw;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.home-img{
+    max-width: 20%;
+    height: 280px;
+    border: none;
+    border-radius: 0 20px 0 20px;
+    object-fit: cover;
+    position: relative;
+}
   .bene-1{
     display: flex;
     flex-direction: column;
   }
   
+  /*===============  <section id="emana"><!--4 sections-->  ==================*/
 
   #emana{
     display: flex;
     flex-direction: column;
   }
+  /*img-eng*/
+ .img-eng{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0 30px;
+ }
 
+  .img-eng img{
+    max-width: 80%;
+    max-height: 70%;
+    border: none;
+    border-radius: 5px;
+}
   .emane1-2 p{
-    font-size: 0.5;
+    font-size: 0.2rem;
   }
+
+  section #contai-eman1{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .eman1-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+  /*=======SECTION 5 =========*/
+  #sectio h1{
+    font-size: 2.1rem;
+    font-family: "DM Sans";
+   
+}
+.emanel-2 p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.0em;
+    color: black;
+    font-weight: 400;
+}
+
+
+.se5-img img{
+    max-width: 100%;
+    max-height: 90%;
+    
+    border: none;
+    border-radius: 30px;
+}
+.secti-trailer{
+    height: 40vh;
+}
+.secti-trailer h5{
+    font-size: 2rem;
+}
+.secti-trailer p{
+ font-size: 0.9rem;   
+}
+ 
+.bene {
+    margin: none;
+}
+
 }
