@@ -1,4 +1,3 @@
-![Imagen Previa do projecto](![Image](https://github.com/user-attachments/assets/d62e9e16-c768-452e-bc9d-75c5307c0e89))
-![Minha Imagem](https://github.com/user/repo/blob/main/img%20preview.png?raw=true)
-![Preview do Projeto](img/preview.png)
+![Image](https://github.com/user-attachments/assets/10d59a21-69f4-485e-ac05-c37a6482c0f3)
+
 
